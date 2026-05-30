@@ -283,7 +283,33 @@ h1, h2, h3, h4, h5 {
   text-transform: uppercase;
   margin-top: 2px;
 }
+/* Logo image — replace assets/logo.png with your actual file */
+.nav-logo-img {
+  height: 52px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+.footer-logo-img {
+  height: 44px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  margin-bottom: 4px;
+}
+/* Keep old selector for any stray uses */
 .nav-logo img { height: 52px; width: auto; }
+
+/* Footer legal links in bottom bar */
+.footer-legal-link {
+  color: var(--muted);
+  text-decoration: none;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 1px;
+  transition: color .2s;
+}
+.footer-legal-link:hover { color: var(--pink); }
 
 .nav-links {
   display: flex; align-items: center; gap: 6px;
@@ -756,7 +782,7 @@ h1, h2, h3, h4, h5 {
    FLOATING MUSIC PLAYER
 ══════════════════════════════════════════════════════════════════ */
 #float-player {
-  position: fixed; bottom: 26px; right: 26px;
+  position: fixed; bottom: 70px; right: 26px;
   z-index: 800;
   background: rgba(14,14,26,.92);
   border: 1px solid rgba(255,31,142,.3);

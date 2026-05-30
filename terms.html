@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Avotune Studio Terms of Use — rules and conditions governing use of our website and enrollment in our courses."/>
+  <meta name="description" content="Avotune Studio Terms of Use — rules and conditions governing use of our website and enrollment."/>
+  
   <title>Terms of Use — Avotune Studio</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
@@ -12,36 +13,8 @@
 </head>
 <body>
 
-<div class="cursor-dot"></div>
-<div class="cursor-ring"></div>
-<canvas id="av-particles"></canvas>
-<div class="nav-overlay"></div>
-<div id="read-progress"></div>
-
-<!-- ════════════════════ NAVBAR ═════════════════════════════════ -->
-<nav id="av-nav">
-  <div class="container">
-    <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="nav-logo text-decoration-none">
-        <span class="nav-logo-text">Avotune</span>
-        <span class="nav-logo-sub">Studio</span>
-      </a>
-      <div class="nav-links-wrap d-flex align-items-center gap-3">
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="courses.html">Courses</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <a href="index.html#enroll" class="btn-av btn-primary ms-2">Enroll Now</a>
-      </div>
-      <button class="nav-hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </div>
-</nav>
+<!-- ═══ HEADER (injected by js/components.js) ════════════════════ -->
+<div id="av-header-inject"></div>
 
 <!-- ════════════════════ PAGE HERO ══════════════════════════════ -->
 <section class="legal-hero">
@@ -267,73 +240,13 @@
 </section>
 
 <!-- ════════════════════ FOOTER ══════════════════════════════════ -->
-<footer id="av-footer">
-  <div class="container">
-    <div class="row g-5">
-      <div class="col-lg-4">
-        <div class="footer-logo-text">Avotune</div>
-        <div class="footer-sub">Studio</div>
-        <p class="footer-desc">Delhi's premier music production studio and training institute.</p>
-        <div class="social-row">
-          <a href="#" class="soc-btn"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="soc-btn"><i class="fab fa-youtube"></i></a>
-          <a href="#" class="soc-btn"><i class="fab fa-spotify"></i></a>
-          <a href="#" class="soc-btn"><i class="fab fa-whatsapp"></i></a>
-          <a href="#" class="soc-btn"><i class="fab fa-facebook-f"></i></a>
-        </div>
-      </div>
-      <div class="col-6 col-lg-2">
-        <div class="footer-col-title">Navigate</div>
-        <a href="index.html"   class="footer-link">Home</a>
-        <a href="about.html"   class="footer-link">About Us</a>
-        <a href="courses.html" class="footer-link">Courses</a>
-        <a href="blog.html"    class="footer-link">Blog</a>
-        <a href="contact.html" class="footer-link">Contact</a>
-      </div>
-      <div class="col-6 col-lg-2">
-        <div class="footer-col-title">Legal</div>
-        <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
-        <a href="disclaimer.html"     class="footer-link">Disclaimer</a>
-        <a href="terms.html"          class="footer-link">Terms of Use</a>
-      </div>
-      <div class="col-lg-4">
-        <div class="footer-col-title">Contact</div>
-        <p class="footer-contact">
-          <i class="fas fa-map-marker-alt"></i>42, Music Lane, Lajpat Nagar, Delhi<br>
-          <i class="fas fa-envelope"></i>hello@avotunesudio.in<br>
-          <i class="fas fa-phone"></i>+91 98765 43210
-        </p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span class="footer-copy">© 2025 Avotune Studio. All rights reserved.</span>
-      <span class="footer-copy" style="display:flex;gap:16px;flex-wrap:wrap;">
-        <a href="privacy-policy.html" style="color:var(--muted);text-decoration:none;font-size:11px;letter-spacing:1px;">Privacy Policy</a>
-        <a href="disclaimer.html"     style="color:var(--muted);text-decoration:none;font-size:11px;letter-spacing:1px;">Disclaimer</a>
-        <a href="terms.html"          style="color:var(--muted);text-decoration:none;font-size:11px;letter-spacing:1px;">Terms of Use</a>
-      </span>
-    </div>
-  </div>
-</footer>
 
-<div id="float-player">
-  <div class="fp-vinyl" id="fp-vinyl"><i class="fas fa-music"></i></div>
-  <div class="fp-meta">
-    <div class="fp-song" id="fp-title">Avotune Vibe Mix</div>
-    <div class="fp-artist" id="fp-artist">Avotune Beats</div>
-  </div>
-  <div class="fp-progress-wrap">
-    <div class="fp-progress"><div class="fp-bar" id="fp-bar"></div></div>
-    <div class="fp-time" id="fp-time">0:00 / 3:00</div>
-  </div>
-  <div class="fp-controls">
-    <button class="fp-btn" id="fp-prev"><i class="fas fa-backward-step"></i></button>
-    <button class="fp-play-btn" id="fp-play"><i class="fas fa-play" id="fp-icon"></i></button>
-    <button class="fp-btn" id="fp-next"><i class="fas fa-forward-step"></i></button>
-  </div>
-</div>
+<!-- ═══ FOOTER + PLAYER (injected by js/components.js) ══════════ -->
+<div id="av-footer-inject"></div>
+<div id="av-player-inject"></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+<script src="js/components.js"></script>
 <script src="js/main.js"></script>
 <script src="js/home.js"></script>
 <script src="js/legal.js"></script>
