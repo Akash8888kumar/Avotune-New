@@ -98,7 +98,7 @@
       <div class="col-lg-4">
         <a href="index.html" class="text-decoration-none d-inline-block mb-3">
           <img
-            src="assets/logo.png"
+            src="images/logo.png"
             alt="Avotune Studio Logo"
             class="footer-logo-img"
             onerror="this.style.display='none'; document.getElementById('footer-logo-fallback').style.display='block';"
@@ -182,7 +182,7 @@
   <div class="fp-vinyl" id="fp-vinyl"><i class="fas fa-music"></i></div>
   <div class="fp-meta">
     <div class="fp-song"   id="fp-title">Avotune Vibe Mix</div>
-    <div class="fp-artist" id="fp-artist">Avotune Beats</div>
+    <div class="fp-artist" id="fp-artist">Avotune Beats</div> 
   </div>
   <div class="fp-progress-wrap">
     <div class="fp-progress"><div class="fp-bar" id="fp-bar"></div></div>
